@@ -36,23 +36,3 @@ document.querySelectorAll('.nav-link').forEach(anchor => {
         }
     });
 });
-// function fadeIn(element, duration) {
-//     let opacity = 0;
-//     element.style.opacity = opacity;
-//     const interval = 16;
-//     const step = interval / duration;
-//     function animate() {
-//         opacity += step;
-//         if (opacity <= 1) {
-//             element.style.opacity = opacity;
-//             requestAnimationFrame(animate);
-//         }
-//     }
-//     animate();
-// }
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     const welcomeElement = document.getElementById("home");
-//     fadeIn(welcomeElement, 1000);
-//     setTimeout(() => fadeIn(skillsElement, 1000), 500);
-// });
