@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Raffy</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-gray-100">
+    <!-- Tombol Chat -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button id="chat-btn" class="w-14 h-14 bg-blue-500 text-white rounded-full shadow-lg flex items-center justify-center text-2xl 
+                   transition-transform transform hover:scale-110 active:scale-95 animate-bounce">
+            💬
+        </button>
+    </div>
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4 fixed w-full z-10 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-semibold">My Portfolio</h1>
+
+            <!-- Menu Desktop -->
+            <div class="hidden md:flex space-x-6 mx-auto">
+                <a href="#home" class="nav-link hover:text-gray-400">Home</a>
+                <a href="#about" class="nav-link hover:text-gray-400">About</a>
+                <a href="#projects" class="nav-link hover:text-gray-400">My Projects</a>
+                <a href="#contact" class="nav-link hover:text-gray-400">Contact</a>
+            </div>
+
+            <!-- Tombol Download CV (Desktop) -->
+            <a href="assets/cvpkl1.pdf" download
+                class="hidden md:block bg-blue-500 px-4 py-2 rounded hover:bg-blue-600">
+                Download CV
+            </a>
+
+            <!-- Burger Menu Button -->
+            <button id="menu-btn" class="md:hidden text-xl">☰</button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden flex flex-col items-center md:hidden bg-gray-800 w-full py-4 
+        transition-all duration-300 ease-in-out opacity-0 scale-y-0 origin-top">
+            <a href="#home" class="nav-link block py-2 hover:text-gray-400">Home</a>
+            <a href="#about" class="nav-link block py-2 hover:text-gray-400">About</a>
+            <a href="#projects" class="nav-link block py-2 hover:text-gray-400">My Projects</a>
+            <a href="#contact" class="nav-link block py-2 hover:text-gray-400">Contact</a>
+            <a href="assets/cvpkl1.pdf" download class="block bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 mt-2">
+                Download CV
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex flex-col items-center justify-center bg-gray-800 px-6 relative fade-in">
+        <!-- Profile Photo -->
+        <div data-aos="fade-left" data-aos-duration="2300" class="mb-8">
+            <img src="assets/pp-removebg-preview.png" alt="Your Photo"
+                class="w-48 h-48 md:w-60 md:h-60 object-contain shadow-lg">
+        </div>
+
+        <!-- Centered Content -->
+        <d class="text-center space-y-6 max-w-md">
+            <!-- Title and Description -->
+            <div data-aos="fade-right" data-aos-duration="2300">
+                <h2 class="text-5xl font-bold text-white">Welcome to My Portfolio</h2>
+                <p class="text-lg text-gray-300 mt-2">Explore my work and skills</p>
+            </div>
+
+            <!-- Technology Icons -->
+            <div data-aos="fade-left" data-aos-duration="2300" class="flex space-x-6 justify-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"
+                    class="w-10 h-10 hover:scale-110 transition-transform">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"
+                    class="w-10 h-10 hover:scale-110 transition-transform">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript" class="w-10 h-10 hover:scale-110 transition-transform">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"
+                    class="w-10 h-10 hover:scale-110 transition-transform">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+                    class="w-10 h-10 hover:scale-110 transition-transform">
+            </div>
+
+            <!-- Buttons -->
+            <div data-aos="fade-right" data-aos-duration="2300"
+                class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center">
+                <a href="#projects"
+                    class="bg-blue-500 px-6 py-2 rounded text-white hover:bg-blue-600 transition-colors text-center">See
+                    My Projects</a>
+                <a href="page2.html"
+                    class="bg-blue-500 px-6 py-2 rounded text-white hover:bg-blue-600 transition-colors text-center">See
+                    My Certificates</a>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="flex space-x-6 justify-center">
+                <a href="https://github.com/Raffy626" target="_blank"
+                    class="flex flex-col items-center text-white hover:text-gray-400 transition-colors">
+                    <i class="fab fa-instagram text-3xl"></i>
+                    <span class="text-sm text-gray-400 mt-1">Instagram</span>
+                </a>
+                <a href="https://github.com/Raffy626" target="_blank"
+                    class="flex flex-col items-center text-white hover:text-gray-400 transition-colors">
+                    <i class="fab fa-github text-3xl"></i>
+                    <span class="text-sm text-gray-400 mt-1">GitHub</span>
+                </a>
+                </a>
+            </div>
+            </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="h-screen flex flex-col items-center justify-center text-center bg-gray-700 px-6">
+        <img data-aos="fade-up" data-aos-duration="1000" src="assets/pp.jpeg" alt=""
+            class="w-45 h-40 rounded-full shadow-lg mb-4">
+        <h2 data-aos="fade-up" data-aos-duration="1000" class="text-4xl font-bold">About Me</h2>
+        <p data-aos="fade-up" data-aos-duration="1000" class="text-lg mt-2 max-w-2xl">Saya Raffy, seorang Front-End
+            Developer yang berfokus pada pengalaman pengguna
+            dan desain modern. Saya memiliki pengalaman dalam membangun antarmuka yang responsif, estetis, dan mudah
+            digunakan menggunakan teknologi seperti HTML, CSS, JavaScript, dan framework modern seperti React.</p>
+        <p data-aos="fade-up" data-aos-duration="1000" class="text-lg mt-4 max-w-2xl">Selain itu, saya juga memiliki
+            ketertarikan dalam UI/UX Design dan selalu
+            berusaha menciptakan desain yang tidak hanya menarik secara visual tetapi juga intuitif bagi pengguna.</p>
+        <a data-aos="fade-up" data-aos-duration="1000" href="#contact"
+            class="mt-6 bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 nav-link">Contact Me</a>
+    </section>
+
+    <!-- My Projects Section -->
+    <section id="projects" class="py-12 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 data-aos="fade-up" data-aos-duration="1000" class="text-4xl font-bold mb-8">My Projects</h2>
+            <p data-aos="fade-up" data-aos-duration="1000" class="text-lg mt-2 mb-8">Berikut beberapa proyek yang pernah
+                saya buat:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="project-card" data-aos="flip-up" data-aos-duration="1000"
+                    class="bg-gray-700 rounded-lg shadow-lg p-6">
+                    <a href="https://e-commerce-delta-flax-55.vercel.app/" target="_blank" class="block">
+                        <img src="assets/project1.png" alt="Project 1" class="w-full h-48 object-cover rounded-lg mb-4">
+                    </a>
+                    <h3 class="text-2xl font-semibold mb-2">Website E-commerce</h3>
+                    <p class="text-gray-400 mb-4">Website untuk penjualan kerajinan tangan.</p>
+                    <a href="https://e-commerce-delta-flax-55.vercel.app/" target="_blank"
+                        class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 inline-block">Lihat Proyek</a>
+                </div>
+                <div class="project-card" data-aos="flip-down" data-aos-duration="1000"
+                    class="bg-gray-700 rounded-lg shadow-lg p-6">
+                    <a href="https://freelance-lyart-psi.vercel.app/" target="_blank" class="block">
+                        <img src="assets/project2.png" alt="Project 2" class="w-full h-48 object-cover rounded-lg mb-4">
+                    </a>
+                    <h3 class="text-2xl font-semibold mb-2">Portfolio Website</h3>
+                    <p class="text-gray-400 mb-4">Website portofolio pribadi dengan desain responsif.</p>
+                    <a href="https://freelance-lyart-psi.vercel.app/" target="_blank"
+                        class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 inline-block">Lihat Proyek</a>
+                </div>
+                <div class="project-card" data-aos="flip-up" data-aos-duration="1000"
+                    class="bg-gray-700 rounded-lg shadow-lg p-6">
+                    <a href="https://github.com/Raffy626/React/tree/main/src" target="_blank" class="block">
+                        <img src="assets/project3.png" alt="Project 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    </a>
+                    <h3 class="text-2xl font-semibold mb-2">Fresh Drink</h3>
+                    <p class="text-gray-400 mb-4">Berbagai macam produk penjualan minuman.</p>
+                    <a href="https://github.com/Raffy626/React/tree/main/src" target="_blank"
+                        class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 inline-block">Lihat Proyek</a>
+                </div>
+                <div class="project-card" data-aos="flip-down" data-aos-duration="1000"
+                    class="bg-gray-700 rounded-lg shadow-lg p-6">
+                    <a href="https://github.com/Raffy626/todolist" target="_blank" class="block">
+                        <img src="assets/project4.png" alt="Project 3" class="w-full h-48 object-cover rounded-lg mb-4">
+                    </a>
+                    <h3 class="text-2xl font-semibold mb-2">To-Do List</h3>
+                    <p class="text-gray-400 mb-4">berfungsi seperti noted ketika anda ingin mencatat sesuatu.</p>
+                    <a href="https://github.com/Raffy626/todolist" target="_blank"
+                        class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 inline-block">Lihat Proyek</a>
+                </div>
+                <div class="project-card" data-aos="flip-up" data-aos-duration="1000"
+                    class="bg-gray-700 rounded-lg shadow-lg p-6">
+                    <a href="https://github.com/Raffy626/todolist/tree/main/AJAX_AUTH" target="_blank" class="block">
+                        <img src="assets/Screenshot 2025-02-10 at 12.31.45.png" alt="Project 3"
+                            class="w-full h-48 object-cover rounded-lg mb-4">
+                    </a>
+                    <h3 class="text-2xl font-semibold mb-2">CARD</h3>
+                    <p class="text-gray-400 mb-4">memiliki desain yang minimalis dan simple</p>
+                    <a href="https://github.com/Raffy626/todolist/tree/main/AJAX_AUTH" target="_blank"
+                        class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 inline-block">Lihat Proyek</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="h-screen flex flex-col items-center justify-center text-center bg-gray-700 p-8">
+        <h2 data-aos="fade-up" data-aos-duration="1000" class="text-4xl font-bold">Contact Me</h2>
+        <p data-aos="fade-up" data-aos-duration="1000" class="text-lg mt-2">Silakan hubungi saya melalui email:
+            raffypin@gmail.com</p>
+        <a data-aos="fade-up" data-aos-duration="1000" href="mailto:raffypin@gmail.com"
+            class="mt-4 bg-blue-500 px-4 py-2 rounded hover:bg-blue-600">Send Email</a>
+
+        <!-- Contact Form -->
+        <div data-aos="fade-up" data-aos-duration="1000"
+            class="mt-6 bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md">
+            <form id="email-form" class="flex flex-col space-y-4" onsubmit="sendEmail(event)">
+                <input type="text" id="name" placeholder="Your Name"
+                    class="px-4 py-2 rounded bg-gray-900 text-white border border-gray-600 focus:outline-none focus:border-blue-500"
+                    required>
+                <textarea id="message" placeholder="Your Message"
+                    class="px-4 py-2 rounded bg-gray-900 text-white border border-gray-600 focus:outline-none focus:border-blue-500"
+                    required></textarea>
+                <button type="submit" class="bg-blue-500 px-4 py-2 rounded hover:bg-green-600">
+                    Send Email
+                </button>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-center p-4 mt-4">
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("chat-btn").addEventListener("click", function () {
+            const chatBox = document.getElementById("chat-box");
+
+            if (chatBox.classList.contains("scale-0")) {
+                chatBox.classList.remove("scale-0", "opacity-0");
+                chatBox.classList.add("scale-100", "opacity-100");
+            } else {
+                chatBox.classList.remove("scale-100", "opacity-100");
+                chatBox.classList.add("scale-0", "opacity-0");
+            }
+        });
+
+        document.getElementById("close-chat").addEventListener("click", function () {
+            const chatBox = document.getElementById("chat-box");
+            chatBox.classList.remove("scale-100", "opacity-100");
+            chatBox.classList.add("scale-0", "opacity-0");
+        });
+
+        function sendEmail(event) {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const message = document.getElementById("message").value;
+        const email = "pinraffy@egmail.com";
+
+        const mailtoLink = `mailto:${email}?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
+        window.location.href = mailtoLink;
+    }
+    </script>
+</body>
+
+</html>
