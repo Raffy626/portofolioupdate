@@ -18,7 +18,7 @@ document.getElementById("chat-btn").addEventListener("click", function() {
     let message = encodeURIComponent("Halo! Saya ingin bertanya.");
     let whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
     
-    window.location.href = whatsappURL;
+    window.open(whatsappURL, "_blank"); // Buka di tab baru
 });
 
 // Smooth Scroll untuk semua link di dalam menu
