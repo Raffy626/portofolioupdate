@@ -13,19 +13,12 @@ document.getElementById('menu-btn').addEventListener('click', function () {
     }
 });
 
-document.getElementById('whatsapp-form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Mencegah form dikirim secara default
-
-    let name = document.getElementById('name').value;
-    let email = document.getElementById('email').value;
-    let message = document.getElementById('message').value;
-
-    let text = `Halo, saya ${name}!\n${email}\n${message}`;
-
-    let whatsappURL = `https://wa.me/6281232093905?text=${encodeURIComponent(text)}`;
-
-    // Arahkan ke WhatsApp
-    window.open(whatsappURL, '_blank');
+document.getElementById("chat-btn").addEventListener("click", function() {
+    let phoneNumber = "6281232093905"; 
+    let message = encodeURIComponent("Halo! Saya ingin bertanya.");
+    let whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+    
+    window.location.href = whatsappURL;
 });
 
 // Smooth Scroll untuk semua link di dalam menu
