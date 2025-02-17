@@ -24,10 +24,10 @@
     <!-- Navbar -->
     <nav class="bg-gray-800 p-4 fixed w-full z-10 shadow-lg">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-semibold text-white">My Portfolio</h1>
+            <h1 class="text-2xl font-semibold">My Portfolio</h1>
 
             <!-- Menu Desktop -->
-            <div class="hidden md:flex space-x-6">
+            <div class="hidden md:flex space-x-6 mx-auto">
                 <a href="#home" class="nav-link hover:text-gray-400">Home</a>
                 <a href="#about" class="nav-link hover:text-gray-400">About</a>
                 <a href="#projects" class="nav-link hover:text-gray-400">My Projects</a>
@@ -37,26 +37,23 @@
 
             <!-- Tombol Download CV (Desktop) -->
             <a href="assets/cvpkl1.pdf" download
-                class="hidden md:block bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 text-white">
+                class="hidden md:block bg-blue-500 px-4 py-2 rounded hover:bg-blue-600">
                 Download CV
             </a>
 
             <!-- Burger Menu Button -->
-            <button id="menu-btn" class="md:hidden text-3xl text-white focus:outline-none">
-                ☰
-            </button>
+            <button id="menu-btn" class="md:hidden text-xl">☰</button>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu"
-            class="hidden flex flex-col items-center md:hidden bg-gray-800 w-full py-4 transition-transform duration-300 ease-in-out scale-y-0 origin-top">
+        <div id="mobile-menu" class="hidden flex flex-col items-center md:hidden bg-gray-800 w-full py-4 
+        transition-all duration-300 ease-in-out opacity-0 scale-y-0 origin-top">
             <a href="#home" class="nav-link block py-2 hover:text-gray-400">Home</a>
             <a href="#about" class="nav-link block py-2 hover:text-gray-400">About</a>
             <a href="#projects" class="nav-link block py-2 hover:text-gray-400">My Projects</a>
             <a href="#contact" class="nav-link block py-2 hover:text-gray-400">Contact</a>
             <a href="#faq" class="nav-link block py-2 hover:text-gray-400">FAQ</a>
-            <a href="assets/cvpkl1.pdf" download
-                class="block bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 mt-2 text-white">
+            <a href="assets/cvpkl1.pdf" download class="block bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 mt-2">
                 Download CV
             </a>
         </div>
@@ -231,21 +228,18 @@
             <h2 class="text-4xl font-bold mb-8 text-center text-white">Frequently Asked Questions</h2>
             <div class="space-y-6">
 
-                <div data-aos="fade-right" data-aos-duration="1000" class="faq-card relative w-full h-32 cursor-pointer"
-                    onclick="flipCard(this)">
+                <div data-aos="fade-right" data-aos-duration="1000" class="faq-card relative w-full h-32 cursor-pointer" onclick="flipCard(this)">
                     <div
                         class="front absolute w-full h-full bg-gray-700 rounded-lg shadow-lg p-6 flex items-center justify-center text-xl font-semibold text-white">
                         Kapan Memulai Coding?
                     </div>
                     <div
                         class="back absolute w-full h-full bg-gray-900 rounded-lg shadow-lg p-6 flex items-center justify-center text-gray-400">
-                        Saya mulai belajar coding saat kelas 9 SMP. Namun, tidak ada waktu yang terlambat untuk mulai.
-                        Asalkan ada niat dan konsistensi, siapa pun bisa belajar!
+                        Saya mulai belajar coding saat kelas 9 SMP. Namun, tidak ada waktu yang terlambat untuk mulai. Asalkan ada niat dan konsistensi, siapa pun bisa belajar!
                     </div>
                 </div>
                 <!-- FAQ Card -->
-                <div data-aos="fade-left" data-aos-duration="1000" class="faq-card relative w-full h-32 cursor-pointer"
-                    onclick="flipCard(this)">
+                <div data-aos="fade-left" data-aos-duration="1000" class="faq-card relative w-full h-32 cursor-pointer" onclick="flipCard(this)">
                     <div
                         class="front absolute w-full h-full bg-gray-700 rounded-lg shadow-lg p-6 flex items-center justify-center text-xl font-semibold text-white">
                         Apa itu Front-End Developer?
@@ -258,8 +252,7 @@
                 </div>
 
                 <!-- FAQ Card -->
-                <div data-aos="fade-right" data-aos-duration="1000" class="faq-card relative w-full h-32 cursor-pointer"
-                    onclick="flipCard(this)">
+                <div data-aos="fade-right" data-aos-duration="1000" class="faq-card relative w-full h-32 cursor-pointer" onclick="flipCard(this)">
                     <div
                         class="front absolute w-full h-full bg-gray-700 rounded-lg shadow-lg p-6 flex items-center justify-center text-xl font-semibold text-white">
                         Apa itu UI/UX Design?
@@ -270,29 +263,25 @@
                     </div>
                 </div>
 
-                <div data-aos="fade-left" data-aos-duration="1000" class="faq-card relative w-full h-32 cursor-pointer"
-                    onclick="flipCard(this)">
+                <div data-aos="fade-left" data-aos-duration="1000" class="faq-card relative w-full h-32 cursor-pointer" onclick="flipCard(this)">
                     <div
                         class="front absolute w-full h-full bg-gray-700 rounded-lg shadow-lg p-6 flex items-center justify-center text-xl font-semibold text-white">
                         Apa Bahasa Pemrograman yang Harus Dipelajari Pertama?
                     </div>
                     <div
                         class="back absolute w-full h-full bg-gray-900 rounded-lg shadow-lg p-6 flex items-center justify-center text-gray-400">
-                        Untuk pemula, Python adalah pilihan yang bagus karena sintaksnya sederhana. Jika tertarik dengan
-                        web, HTML, CSS, dan JavaScript adalah awal yang baik.
+                        Untuk pemula, Python adalah pilihan yang bagus karena sintaksnya sederhana. Jika tertarik dengan web, HTML, CSS, dan JavaScript adalah awal yang baik.
                     </div>
                 </div>
 
-                <div data-aos="fade-right" data-aos-duration="1000" class="faq-card relative w-full h-32 cursor-pointer"
-                    onclick="flipCard(this)">
+                <div data-aos="fade-right" data-aos-duration="1000" class="faq-card relative w-full h-32 cursor-pointer" onclick="flipCard(this)">
                     <div
                         class="front absolute w-full h-full bg-gray-700 rounded-lg shadow-lg p-6 flex items-center justify-center text-xl font-semibold text-white">
                         Bagaimana Cara Memulai Coding?
                     </div>
                     <div
                         class="back absolute w-full h-full bg-gray-900 rounded-lg shadow-lg p-6 flex items-center justify-center text-gray-400">
-                        Mulailah dengan memahami dasar logika pemrograman. Gunakan platform seperti W3Schools,
-                        FreeCodeCamp, atau ikut kursus online untuk belajar bahasa seperti HTML, CSS, dan JavaScript.
+                        Mulailah dengan memahami dasar logika pemrograman. Gunakan platform seperti W3Schools, FreeCodeCamp, atau ikut kursus online untuk belajar bahasa seperti HTML, CSS, dan JavaScript.
                     </div>
                 </div>
             </div>
