@@ -8,24 +8,23 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/pp-removebg-preview.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-900 text-gray-100 flex flex-col overflow-x-hidden p-0 m-0">
-    <!-- Tombol Chat WhatsApp -->
-    <!-- <div class="fixed bottom-6 right-6 z-50">
-        <button id="chat-btn" class="w-14 h-14 bg-green-500 text-white rounded-full shadow-lg flex items-center justify-center text-2xl 
-               transition-transform transform hover:scale-110 active:scale-95 animate-bounce">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-8 h-8">
+<body class="bg-gray-900 text-gray-100">
+    <!-- Tombol Chat -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button id="chat-btn" class="w-14 h-14 bg-blue-500 text-white rounded-full shadow-lg flex items-center justify-center text-2xl 
+                   transition-transform transform hover:scale-110 active:scale-95 animate-bounce">
+            💬
         </button>
-    </div> -->
-
+    </div>
     <!-- Navbar -->
-    <nav class="bg-gray-800 p-4 fixed top-0 left-0 right-0 w-full max-w-screen-xl mx-auto z-10 shadow-lg">
-        <div class="container mx-auto flex justify-between items-center px-4">
+    <nav class="bg-gray-800 p-4 fixed w-full z-10 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-semibold">My Portfolio</h1>
 
+            <!-- Menu Desktop -->
             <div class="hidden md:flex space-x-6 mx-auto">
                 <a href="#home" class="nav-link hover:text-gray-400">Home</a>
                 <a href="#about" class="nav-link hover:text-gray-400">About</a>
@@ -33,15 +32,19 @@
                 <a href="#contact" class="nav-link hover:text-gray-400">Contact</a>
             </div>
 
+            <!-- Tombol Download CV (Desktop) -->
             <a href="assets/cvpkl1.pdf" download
                 class="hidden md:block bg-blue-500 px-4 py-2 rounded hover:bg-blue-600">
                 Download CV
             </a>
 
-            <button id="menu-btn" class="flex justify-center items-center md:hidden text-xl pr-4">☰</button>
+            <!-- Burger Menu Button -->
+            <button id="menu-btn" class="md:hidden text-xl">☰</button>
         </div>
 
-        <div id="mobile-menu" class="hidden flex flex-col items-center md:hidden bg-gray-800 w-full py-4 transition-all duration-300 ease-in-out opacity-0 scale-y-0 origin-top">
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden flex flex-col items-center md:hidden bg-gray-800 w-full py-4 
+        transition-all duration-300 ease-in-out opacity-0 scale-y-0 origin-top">
             <a href="#home" class="nav-link block py-2 hover:text-gray-400">Home</a>
             <a href="#about" class="nav-link block py-2 hover:text-gray-400">About</a>
             <a href="#projects" class="nav-link block py-2 hover:text-gray-400">My Projects</a>
@@ -96,7 +99,7 @@
 
             <!-- Social Media Icons -->
             <div class="flex space-x-6 justify-center">
-                <a href="https://www.instagram.com/rffy309/" target="_blank"
+                <a href="https://github.com/Raffy626" target="_blank"
                     class="flex flex-col items-center text-white hover:text-gray-400 transition-colors">
                     <i class="fab fa-instagram text-3xl"></i>
                     <span class="text-sm text-gray-400 mt-1">Instagram</span>
@@ -156,12 +159,12 @@
                 </div>
                 <div class="project-card" data-aos="flip-up" data-aos-duration="1000"
                     class="bg-gray-700 rounded-lg shadow-lg p-6">
-                    <a href="https://drink-ecommerce.vercel.app/" target="_blank" class="block">
+                    <a href="https://github.com/Raffy626/React/tree/main/src" target="_blank" class="block">
                         <img src="assets/project3.png" alt="Project 3" class="w-full h-48 object-cover rounded-lg mb-4">
                     </a>
                     <h3 class="text-2xl font-semibold mb-2">Fresh Drink</h3>
                     <p class="text-gray-400 mb-4">Berbagai macam produk penjualan minuman.</p>
-                    <a href="https://drink-ecommerce.vercel.app/" target="_blank"
+                    <a href="https://github.com/Raffy626/React/tree/main/src" target="_blank"
                         class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 inline-block">Lihat Proyek</a>
                 </div>
                 <div class="project-card" data-aos="flip-down" data-aos-duration="1000"
@@ -215,71 +218,6 @@
 
     </section>
 
-    <!-- FAQ Section -->
-    <!-- <section id="faq" class="bg-gray-800 py-12">
-        <div class="container mx-auto p-4 max-w-2xl">
-            <h2 class="text-4xl font-bold mb-8 text-center text-white">Frequently Asked Questions</h2>
-            <div class="space-y-6">
-
-                <div data-aos="fade-right" data-aos-duration="1000" class="faq-card relative w-full h-32 cursor-pointer" onclick="flipCard(this)">
-                    <div
-                        class="front absolute w-full h-full bg-gray-700 rounded-lg shadow-lg p-6 flex items-center justify-center text-xl font-semibold text-white">
-                        Kapan Memulai Coding?
-                    </div>
-                    <div
-                        class="back absolute w-full h-full bg-gray-900 rounded-lg shadow-lg p-6 flex items-center justify-center text-gray-400">
-                        Saya mulai belajar coding saat kelas 9 SMP. Namun, tidak ada waktu yang terlambat untuk mulai. Asalkan ada niat dan konsistensi, siapa pun bisa belajar!
-                    </div>
-                </div>
-
-                <div data-aos="fade-left" data-aos-duration="1000" class="faq-card relative w-full h-32 cursor-pointer" onclick="flipCard(this)">
-                    <div
-                        class="front absolute w-full h-full bg-gray-700 rounded-lg shadow-lg p-6 flex items-center justify-center text-xl font-semibold text-white">
-                        Apa itu Front-End Developer?
-                    </div>
-                    <div
-                        class="back absolute w-full h-full bg-gray-900 rounded-lg shadow-lg p-6 flex items-center justify-center text-gray-400">
-                        Front-End Developer bertanggung jawab mengembangkan tampilan website yang dapat diakses oleh
-                        pengguna.
-                    </div>
-                </div>
-
-                <div data-aos="fade-right" data-aos-duration="1000" class="faq-card relative w-full h-32 cursor-pointer" onclick="flipCard(this)">
-                    <div
-                        class="front absolute w-full h-full bg-gray-700 rounded-lg shadow-lg p-6 flex items-center justify-center text-xl font-semibold text-white">
-                        Apa itu UI/UX Design?
-                    </div>
-                    <div
-                        class="back absolute w-full h-full bg-gray-900 rounded-lg shadow-lg p-6 flex items-center justify-center text-gray-400">
-                        UI/UX Design adalah proses mendesain pengalaman dan tampilan visual suatu aplikasi atau website.
-                    </div>
-                </div>
-
-                <div data-aos="fade-left" data-aos-duration="1000" class="faq-card relative w-full h-32 cursor-pointer" onclick="flipCard(this)">
-                    <div
-                        class="front absolute w-full h-full bg-gray-700 rounded-lg shadow-lg p-6 flex items-center justify-center text-xl font-semibold text-white">
-                        Apa Bahasa Pemrograman yang Harus Dipelajari Pertama?
-                    </div>
-                    <div
-                        class="back absolute w-full h-full bg-gray-900 rounded-lg shadow-lg p-6 flex items-center justify-center text-gray-400">
-                        Untuk pemula, Python adalah pilihan yang bagus karena sintaksnya sederhana. Jika tertarik dengan web, HTML, CSS, dan JavaScript adalah awal yang baik.
-                    </div>
-                </div>
-
-                <div data-aos="fade-right" data-aos-duration="1000" class="faq-card relative w-full h-32 cursor-pointer" onclick="flipCard(this)">
-                    <div
-                        class="front absolute w-full h-full bg-gray-700 rounded-lg shadow-lg p-6 flex items-center justify-center text-xl font-semibold text-white">
-                        Bagaimana Cara Memulai Coding?
-                    </div>
-                    <div
-                        class="back absolute w-full h-full bg-gray-900 rounded-lg shadow-lg p-6 flex items-center justify-center text-gray-400">
-                        Mulailah dengan memahami dasar logika pemrograman. Gunakan platform seperti W3Schools, FreeCodeCamp, atau ikut kursus online untuk belajar bahasa seperti HTML, CSS, dan JavaScript.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <!-- Footer -->
     <footer class="bg-gray-800 text-center p-4 mt-4">
         <p>&copy; 2025 My Portfolio. All rights reserved.</p>
@@ -309,14 +247,14 @@
         });
 
         function sendEmail(event) {
-            event.preventDefault();
-            const name = document.getElementById("name").value;
-            const message = document.getElementById("message").value;
-            const email = "pinraffy@egmail.com";
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const message = document.getElementById("message").value;
+        const email = "pinraffy@egmail.com";
 
-            const mailtoLink = `mailto:${email}?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
-            window.location.href = mailtoLink;
-        }
+        const mailtoLink = `mailto:${email}?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
+        window.location.href = mailtoLink;
+    }
     </script>
 </body>
 
