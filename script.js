@@ -16,6 +16,18 @@ document.getElementById('menu-btn').addEventListener('click', function () {
     }    
 });
 
+const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const sidebar = document.getElementById('sidebar');
+
+        menuBtn.addEventListener('click', () => {
+            sidebar.classList.remove('-translate-x-full');
+        });
+        
+        closeBtn.addEventListener('click', () => {
+            sidebar.classList.add('-translate-x-full');
+        });
+
 document.getElementById("chat-btn").addEventListener("click", function() {
     let phoneNumber = "6281232093905"; 
     let message = encodeURIComponent("Halo! Saya ingin bertanya.");
