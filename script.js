@@ -6,11 +6,15 @@ document.getElementById('menu-btn').addEventListener('click', function () {
     // Animasi slide down & fade in
     if (mobileMenu.classList.contains('hidden')) {
         mobileMenu.classList.remove('hidden');
-        mobileMenu.classList.add('opacity-100', 'scale-y-100');
+        setTimeout(() => {
+            mobileMenu.classList.add('opacity-100', 'scale-y-100');
+        }, 10);
     } else {
-        mobileMenu.classList.add('hidden');
         mobileMenu.classList.remove('opacity-100', 'scale-y-100');
-    }
+        setTimeout(() => {
+            mobileMenu.classList.add('hidden');
+        }, 300);
+    }    
 });
 
 document.getElementById("chat-btn").addEventListener("click", function() {
@@ -30,12 +34,14 @@ document.querySelectorAll('.nav-link').forEach(anchor => {
             behavior: 'smooth'
         });
 
-        // Tutup menu setelah klik (hanya di mobile)
-        if (window.innerWidth < 500) {
-            document.getElementById('mobile-menu').classList.add('hidden');
+        // Tutup menu setelah klik (jika terbuka)
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (!mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('hidden');
         }
     });
 });
+
 // document.querySelectorAll('.faq-card').forEach(card => {
 //     card.style.perspective = '1000px';
 //     let front = card.querySelector('.front');
