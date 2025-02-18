@@ -13,13 +13,13 @@ document.getElementById('menu-btn').addEventListener('click', function () {
     }
 });
 
-// document.getElementById("chat-btn").addEventListener("click", function() {
-//     let phoneNumber = "6281232093905"; 
-//     let message = encodeURIComponent("Halo! Saya ingin bertanya.");
-//     let whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+document.getElementById("chat-btn").addEventListener("click", function() {
+    let phoneNumber = "6281232093905"; 
+    let message = encodeURIComponent("Halo! Saya ingin bertanya.");
+    let whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
     
-//     window.open(whatsappURL, "_blank");
-// });
+    window.open(whatsappURL, "_blank");
+});
 
 // Smooth Scroll untuk semua link di dalam menu
 document.querySelectorAll('.nav-link').forEach(anchor => {
