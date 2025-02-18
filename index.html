@@ -290,33 +290,33 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
     <script>
-        // document.getElementById("chat-btn").addEventListener("click", function () {
-        //     const chatBox = document.getElementById("chat-box");
+        document.getElementById("chat-btn").addEventListener("click", function () {
+            const chatBox = document.getElementById("chat-box");
 
-        //     if (chatBox.classList.contains("scale-0")) {
-        //         chatBox.classList.remove("scale-0", "opacity-0");
-        //         chatBox.classList.add("scale-100", "opacity-100");
-        //     } else {
-        //         chatBox.classList.remove("scale-100", "opacity-100");
-        //         chatBox.classList.add("scale-0", "opacity-0");
-        //     }
-        // });
+            if (chatBox.classList.contains("scale-0")) {
+                chatBox.classList.remove("scale-0", "opacity-0");
+                chatBox.classList.add("scale-100", "opacity-100");
+            } else {
+                chatBox.classList.remove("scale-100", "opacity-100");
+                chatBox.classList.add("scale-0", "opacity-0");
+            }
+        });
 
-        // document.getElementById("close-chat").addEventListener("click", function () {
-        //     const chatBox = document.getElementById("chat-box");
-        //     chatBox.classList.remove("scale-100", "opacity-100");
-        //     chatBox.classList.add("scale-0", "opacity-0");
-        // });
+        document.getElementById("close-chat").addEventListener("click", function () {
+            const chatBox = document.getElementById("chat-box");
+            chatBox.classList.remove("scale-100", "opacity-100");
+            chatBox.classList.add("scale-0", "opacity-0");
+        });
 
-        // function sendEmail(event) {
-        //     event.preventDefault();
-        //     const name = document.getElementById("name").value;
-        //     const message = document.getElementById("message").value;
-        //     const email = "pinraffy@egmail.com";
+        function sendEmail(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const message = document.getElementById("message").value;
+            const email = "pinraffy@egmail.com";
 
-        //     const mailtoLink = `mailto:${email}?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
-        //     window.location.href = mailtoLink;
-        // }
+            const mailtoLink = `mailto:${email}?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
+            window.location.href = mailtoLink;
+        }
     </script>
 </body>
 

@@ -1,44 +1,44 @@
 AOS.init();
 
-// document.getElementById('menu-btn').addEventListener('click', function () {
-//     const mobileMenu = document.getElementById('mobile-menu');
+document.getElementById('menu-btn').addEventListener('click', function () {
+    const mobileMenu = document.getElementById('mobile-menu');
 
-//     if (mobileMenu.classList.contains('hidden')) {
-//         mobileMenu.classList.remove('hidden');
-//         setTimeout(() => {
-//             mobileMenu.classList.add('opacity-100', 'scale-y-100');
-//         }, 10);
-//     } else {
-//         mobileMenu.classList.remove('opacity-100', 'scale-y-100');
-//         setTimeout(() => {
-//             mobileMenu.classList.add('hidden');
-//         }, 300);
-//     }    
-// });
+    if (mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.remove('hidden');
+        setTimeout(() => {
+            mobileMenu.classList.add('opacity-100', 'scale-y-100');
+        }, 10);
+    } else {
+        mobileMenu.classList.remove('opacity-100', 'scale-y-100');
+        setTimeout(() => {
+            mobileMenu.classList.add('hidden');
+        }, 300);
+    }    
+});
 
-// document.getElementById("chat-btn").addEventListener("click", function() {
-//     let phoneNumber = "6281232093905"; 
-//     let message = encodeURIComponent("Halo! Saya ingin bertanya.");
-//     let whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+document.getElementById("chat-btn").addEventListener("click", function() {
+    let phoneNumber = "6281232093905"; 
+    let message = encodeURIComponent("Halo! Saya ingin bertanya.");
+    let whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
     
-//     window.open(whatsappURL, "_blank");
-// });
+    window.open(whatsappURL, "_blank");
+});
 
 // Smooth Scroll untuk semua link di dalam menu
-// document.querySelectorAll('.nav-link').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
-//         const targetId = this.getAttribute('href').substring(1);
-//         document.getElementById(targetId).scrollIntoView({
-//             behavior: 'smooth'
-//         });
+document.querySelectorAll('.nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        document.getElementById(targetId).scrollIntoView({
+            behavior: 'smooth'
+        });
 
-//         const mobileMenu = document.getElementById('mobile-menu');
-//         if (!mobileMenu.classList.contains('hidden')) {
-//             mobileMenu.classList.add('hidden');
-//         }
-//     });
-// });
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (!mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('hidden');
+        }
+    });
+});
 
 // document.querySelectorAll('.faq-card').forEach(card => {
 //     card.style.perspective = '1000px';
