@@ -31,7 +31,7 @@ document.querySelectorAll('.nav-link').forEach(anchor => {
         });
 
         // Tutup menu setelah klik (hanya di mobile)
-        if (window.innerWidth < 768) {
+        if (window.innerWidth < 500) {
             document.getElementById('mobile-menu').classList.add('hidden');
         }
     });
